@@ -260,5 +260,6 @@ for name, msg in testTrack.items():
 
 for name, track in newMid.items():
     newMid[name].tracks.append(testTrack[name])
+    newMid[name].tracks[0].name = name
     newMid[name].save('midibatch/'+name+'.mid')
 
